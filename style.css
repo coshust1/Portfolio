@@ -378,9 +378,9 @@ hr{
     }
 
     .col1{
-        font-size: 1rem;
+        font-size: 12px;
         word-wrap: break-word;
-        padding: 0px;
+        padding: 20px;
         text-align: center;
         justify-content: center;
         border: 2px solid whitesmoke;
@@ -400,13 +400,13 @@ hr{
     }
 
     .tabTitles{
-        font-size: 20px;
+        font-size: 15px;
         cursor: pointer;
         display: flex;
         display: flex;
         align-items: center;
-        margin-left: 40px;
-        justify-content: space-evenly;
+        margin-left: 60px;
+        justify-content: space-evenly
     }
 
     .tab{
@@ -451,7 +451,7 @@ hr{
     .contact{
         height: 50vh;
         width: 100vw;
-        padding: 10px 50px;
+        padding: 10px 20px;
     }
     
     .contactHeader h1{
@@ -464,7 +464,7 @@ hr{
     }
     
     .email h3{
-        font-size: 20px;
+        font-size: 15px;
         margin-left: 20px;
     }
     
