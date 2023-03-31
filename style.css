@@ -47,7 +47,7 @@ body{
 }
 .nav a{
     color: #111;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -93,7 +93,7 @@ body{
 }
 
 .mainTitle h1 {
-    font-size: 110px;
+    font-size: 90px;
     font-weight: 900;
 }
 
@@ -141,7 +141,7 @@ hr{
 }
 
 .col1{
-    font-size: 2.4rem;
+    font-size: 30px;
     word-wrap: break-word;
     padding: 20px 80px;
     text-align: center;
@@ -163,7 +163,7 @@ hr{
 }
 
 .tabTitles{
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer;
     display: flex;
 }
@@ -190,7 +190,7 @@ hr{
 }
 
 .tabContents{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 400;
     display: none;
     transition: 0.5s;
@@ -286,7 +286,7 @@ hr{
 }
 
 .contactHeader h1{
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .email{
@@ -295,7 +295,7 @@ hr{
 }
 
 .email h3{
-    font-size: 40px;
+    font-size: 20px;
     margin-left: 20px;
 }
 
@@ -404,7 +404,9 @@ hr{
         cursor: pointer;
         display: flex;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        justify-content: space-evenly;
     }
 
     .tab{
