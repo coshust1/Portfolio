@@ -1,0 +1,278 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+a{
+ text-decoration: none;   
+ cursor: pointer;
+ color: white;
+}
+.titleTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.searchInput{
+    background-color: grey;
+    border: none;
+    width: 200px;
+    height: 30px;
+}
+
+.searchInput::placeholder{
+    color: lightgrey;
+}
+
+.title{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.searchIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.cartIcon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+
+.navMen, .navWomen{
+    cursor: pointer;
+}
+.navItem{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 1px white solid;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    transition: all 1s ease-in-out;
+    display: flex;
+    width: 500vw;
+}
+
+.sliderWrapperWomens{
+    transition: all 1s ease-in-out;
+    display: flex;
+    width: 500vw;
+}
+
+.popular{
+    text-align: center;
+    font-size: 55px;
+    color: dimgray;
+    height: 20px;
+}
+
+.rightIcon{
+    z-index: 1;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.leftIcon{
+    z-index: 1;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slideItem{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slideName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 15vw;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+
+.slideBrand{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.slideModel{
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+.slidePrice{
+    z-index: 1;
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
+.slideImage{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 70vh;
+}
+
+.slideImg{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.slideDesc{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    width: 250px;
+    left: 75%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.products{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.productsWomen{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.productNav{
+    height: 80px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.productRow{
+   display: flex; 
+   height: 45vh;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-bottom: 50px;
+}
+
+.product{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.productTitle{
+    width: 200%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.productPrimaryTitle{
+    margin-bottom: 0%;
+    font-size: 50px;
+    font-weight: 900;
+}
+.secondaryProductTitle{
+    margin-Top: 0%;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.productImg{
+    margin-bottom: 0px;
+    height: 30vh;
+    width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .slideDesc{
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        width: 250px;
+        left: 75%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-weight: 600;
+        font-size: 25px;
+        display: none;
+    }
+
+    .slideName{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 15vw;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 40px;
+    }
+}

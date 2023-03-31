@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    border: 0;
+    background-color: #111;
+    color: whitesmoke;
+}
+
+.header{
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-bottom: 4px solid whitesmoke;
+}
+
+.titleSlide{
+    background-color: whitesmoke;
+    padding: 10px 20;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: top;
+    border-right: 2px solid #111;
+    border-bottom: 2px solid #111;
+    box-shadow: 10px 0 0 0 whitesmoke;
+    width: 200px;
+    height: 100%;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: 400;
+    color: grey;
+}
+
+.nav{
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+.nav a{
+    color: #111;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.nav a::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: darkblue;
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    transition: 0.5s ease-in;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}
+.nav a:hover{
+    color: darkblue;
+}
+
+.nav a{
+    text-decoration: none;
+    position: relative;
+}
+
+.headerMain{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.mainTitle{
+    text-align: center;
+    padding: 20px 100px;
+    color: #111;
+    background-color: whitesmoke;
+    border: 4px solid #111;
+    box-shadow: 0 0 0 4px whitesmoke;
+    opacity: 90%;
+}
+
+.mainTitle h1 {
+    font-size: 110px;
+    font-weight: 900;
+}
+
+.Design{
+    color: darkblue;
+}
+
+.mainTitle h2 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+hr{
+    color: white;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.aboutHeader, .projectHeader{
+    width: 100%;
+    height: 150px;
+    background-color: whitesmoke;
+    color: gray;
+    border-bottom: 2px solid #111;
+    box-shadow: 0 10px 0 0 whitesmoke;
+}
+.aboutHeader h1, .projectHeader h1{
+    font-size: 80px;
+    margin-left: 100px;
+}
+
+.row{
+    margin-top: 300px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.col1{
+    font-size: 2.4rem;
+    word-wrap: break-word;
+    padding: 20px 80px;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    box-shadow:  0 0 0 5px #111;
+    width: 30%;
+    height: 70%;
+    color: whitesmoke;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.col2{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.tabTitles{
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+}
+
+.tab{
+    position: relative;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+.tab::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    left: 0%;
+    bottom: -8px;
+    transition: 0.5s ease-in;
+}
+
+.tab.activeTab::after{
+    width: 50%;
+}
+
+.tabContents{
+    font-size: 40px;
+    font-weight: 400;
+    display: none;
+    transition: 0.5s;
+}
+
+.tabContents.activeContent{
+    display: flex;
+}
+
+.tabContents span{
+    font-weight: 900;
+    color: red;
+}
+
+.tabContents li{
+    margin-bottom: 40px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.project{
+    margin-top: 200px;
+    height: 50%;
+    width: 60%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.projectImg{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   transition: transform 0.5s;
+}
+.project:hover .projectImg{
+    transform: scale(1.05);
+
+}
+
+.project:hover .layer{
+    transform: scale(1.05);
+    height: 100%;
+    opacity: 1;
+}
+
+.layer{
+    opacity: 0;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+    background: linear-gradient(rgba(0,0,0,0.5), blue);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.layer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.layer h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.layer p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.contact{
+    height: 50vh;
+    width: 100vw;
+    padding: 50px 150px;
+}
+
+.contactHeader h1{
+    font-size: 100px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+}
+
+.email h3{
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .mainTitle{
+        text-align: center;
+        padding: 20px 20px;
+        color: #111;
+        background-color: whitesmoke;
+        border: 2px solid #111;
+        box-shadow: 0 0 0 4px whitesmoke;
+        opacity: 90%;
+        width: 200px;
+    }
+
+    .mainTitle h1 {
+        font-size: 50px;
+        font-weight: 900;
+    }
+    
+    .mainTitle h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .title{
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 40px;
+        font-size: 30px;
+        font-weight: 400;
+        color: grey;
+    }
+
+    .nav a{
+        color: #111;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    
+    .titleSlide{
+        background-color: whitesmoke;
+        padding: 10px 10px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: top;
+        border-right: 2px solid #111;
+        border-bottom: 2px solid #111;
+        box-shadow: 10px 0 0 0 whitesmoke;
+        width: 100px;
+        height: 100%;
+    }
+ 
+    .aboutHeader, .projectHeader{
+        width: 100%;
+        height: 80px;
+        background-color: whitesmoke;
+        color: gray;
+        border-bottom: 2px solid #111;
+        box-shadow: 0 10px 0 0 whitesmoke;
+    }
+
+    .aboutHeader h1, .projectHeader h1{
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+
+    .row{
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .col1{
+        font-size: 1rem;
+        word-wrap: break-word;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+        border: 2px solid whitesmoke;
+        box-shadow:  0 0 0 5px #111;
+        width: 100%;
+        height: 50%;
+        color: whitesmoke;
+        background-color: #111;
+    }
+
+    .col2{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabTitles{
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tab{
+        position: relative;
+        font-weight: 700;
+    }
+
+    .tabContents{
+        font-size: 15px;
+        font-weight: 400;
+        display: none;
+        transition: 0.5s;
+    }
+
+    .tabContents li{
+        margin-bottom: 10px;
+    }
+
+    .project{
+        margin-top: 100px;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .layer h3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .layer p{
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .contact{
+        height: 50vh;
+        width: 100vw;
+        padding: 10px 50px;
+    }
+    
+    .contactHeader h1{
+        font-size: 40px;
+    }
+    
+    .email{
+        display: flex;
+        align-items: center;
+    }
+    
+    .email h3{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    
+  }

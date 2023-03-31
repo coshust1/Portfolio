@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<script src="code.js"></script>
+<body>
+    <nav> 
+        <div class="titleTop">
+            <div class="titleItem">
+                <h1 class="title">Cologne Collections</h1>
+            </div>
+            <div class="titleItem">
+                <div class="search">
+                    <input type="text" class="searchInput" placeholder="Search">
+                    <img src="./imgs/searchIcon.png" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="titleItem">
+                <img src="./imgs/cartIcon.png" alt="" class="cartIcon">
+            </div>
+        </div>
+        <div class="nav">
+            <div class="navItem">
+                <h1 class="navMen">Mens</h1>
+            </div>
+            <div class="navItem">
+                <h1 class="navWomen">Womens
+                </h1>
+            </div>
+        </div>
+    </nav>
+    <div class="slider">
+        <h1 class="popular">Popular</h1>
+                <img src="./imgs/leftIcon.png" alt="" class="leftIcon">
+                <img src="./imgs/rightIcon.png" alt="" class="rightIcon">
+        <div class="sliderWrapper">
+            <div class="slideItem">
+                <div class="slideImage">
+                    <img src="./imgs/sauvage.png" alt="" class="slideImg">
+                </div>
+                <div class="circle"></div>  
+                <div class="slideName">
+                    <h1 class="slideBrand">Dior</h1>
+                    <h2 class="slideModel">Sauvage</h2>
+                    <h2 class="slidePrice">$145 - $265</h2>
+                </div>
+                <p class="slideDesc">Sauvage is an act of creation inspired by wide-open spaces. An ozone blue sky that dominates a white-hot rocky landscape. The strong gust of citrus in Sauvage Eau de Toilette is powerfully anchored by the ambery nobleness of ambroxan, resinous elemi and woods.</p>
+            </div>
+            <div class="slideItem">
+                <div class="slideImage">
+                    <img src="./imgs/YSL.png" alt="" class="slideImg">
+                </div>
+                <div class="circle"></div>  
+                <div class="slideName" style="width: 20%; text-align: center;">
+                    <h1 class="slideBrand">Yves Saint Laurent</h1>
+                    <h2 class="slideModel">Y</h2>
+                    <h2 class="slidePrice">$150 - $245</h2>
+                </div>
+                <p class="slideDesc">The signature Y scent is a bold and woody men's fragrance. This seductive cologne is infused with sophisticated and revitalizing notes of sage and geranium and rounded out with a hint of sensual wood.</p>
+            </div>
+            <div class="slideItem">
+                <div class="slideImage">
+                    <img src="./imgs/blueChanel.webp" alt="" class="slideImg">
+                </div>
+                <div class="circle"></div>  
+                <div class="slideName">
+                    <h1 class="slideBrand">Chanel</h1>
+                    <h2 class="slideModel">Bleu De</h2>
+                    <h2 class="slidePrice">$120 - $265</h2>
+                </div>
+                <p class="slideDesc">an aromatic, intensely woody fragrance. It opens with powerful freshness and then lingers with a precious accord illuminated by the majestic New Caledonian sandalwood that unfurls its generous, powerful notes in a dense and sophisticated trail.</p>
+            </div>
+        </div>
+
+        <div class="sliderWrapperWomens" style="display: none;">
+            <div class="slideItem">
+                <div class="slideImage">
+                    <img src="./imgs/missDior.png" style="height: 55vh;" alt="" class="slideImg">
+                </div>
+                <div class="circle"></div>  
+                <div class="slideName">
+                    <h1 class="slideBrand">Dior</h1>
+                    <h2 class="slideModel">Miss</h2>
+                    <h2 class="slidePrice">$145 - $255</h2>
+                </div>
+                <p class="slideDesc">Centifolia Rose, with its honeyed and peppery notes, reigns over a delectably creamy velvet heart. It is embroidered with fresh Lily-of-the-Valley notes, an apricot-tinged Peony accord, and powdery Iris notes.</p>
+            </div>
+            <div class="slideItem">
+                <div class="slideImage">
+                    <img src="./imgs/blackOpium.png" alt="" class="slideImg">
+                </div>
+                <div class="circle"></div>  
+                <div class="slideName">
+                    <h1 class="slideBrand">YSL</h1>
+                    <h2 class="slideModel">Black Opium</h2>
+                    <h2 class="slidePrice">$115 - $215</h2>
+                </div>
+                <p class="slideDesc"> seductively intoxicating women's fragrance. The opening notes of adrenaline-rich coffee and the sweet sensuality of vanilla recline into the softness of white flowers creating a long-lasting perfume. This seductive women's perfume is inspired by the edgy and daring woman.</p>
+            </div>
+            <div class="slideItem">
+                <div class="slideImage">
+                    <img src="./imgs/brightcrystal.webp" alt="" class="slideImg">
+                </div>
+                <div class="circle"></div>  
+                <div class="slideName">
+                    <h1 class="slideBrand">Versace</h1>
+                    <h2 class="slideModel">Bright Crystal</h2>
+                    <h2 class="slidePrice">$104 - $255</h2>
+                </div>
+                <p class="slideDesc">a fresh, sensual blend of the refreshing yuzu and pomegranate combined with ultra-feminine peony, magnolia, and lotus flower, warmed with notes of musk and amber.</p>
+            </div>
+        </div>
+
+        <div class="products" id="products">
+            <div class="productNav">
+                <a href="#products">
+                    <h1 class="productNavTitle">Products</h1>
+                </a>
+            </div>
+            <div class="productRow">
+                <div class="product">
+                    <img src="./imgs/sauvage.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Dior</h1>
+                        <h2 class="secondaryProductTitle">Sauvage</h2>
+                        <h2 class="ProductPrice">$145 - $265</h2>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./imgs/YSL.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Yves Saint Laurent</h1>
+                        <h2 class="secondaryProductTitle">Y Eau de Parfum</h2>
+                        <h2 class="ProductPrice">$150 - $245</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="productRow">
+                <div class="product">
+                    <img src="./imgs/blueChanel.webp" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Chanel</h1>
+                        <h2 class="secondaryProductTitle">Bleu De</h2>
+                        <h2 class="ProductPrice">$120 - $265</h2>
+                    </div>
+                </div>
+                <div class="product">
+                    <img style="height: 25vh" src="./imgs/versaceEros.png" alt="" class="productImg">
+                    <div class="productTitle" style="transform: translateY(30px);">
+                        <h1 class="productPrimaryTitle">Versace</h1>
+                        <h2 class="secondaryProductTitle">Eros</h2>
+                        <h2 class="ProductPrice">$150 - $245</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="productRow">
+                <div class="product">
+                    <img src="./imgs/acqua.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Giorgio Armani</h1>
+                        <h2 class="secondaryProductTitle">Acqua Di Gio</h2>
+                        <h2 class="ProductPrice">$160 - $265</h2>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./imgs/jeanPaul.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Jean Paul Gaultier</h1>
+                        <h2 class="secondaryProductTitle">Le Male</h2>
+                        <h2 class="ProductPrice">$150 - $245</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="productsWomen" id="productsWomen" style="display: none;">
+            <div class="productNav">
+                <a href="#productsWomen">
+                    <h1 class="productNavTitle">Products</h1>
+                </a>
+            </div>
+            <div class="productRow">
+                <div class="product">
+                    <img src="./imgs/missDior.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Dior</h1>
+                        <h2 class="secondaryProductTitle">Miss</h2>
+                        <h2 class="ProductPrice">$145 - $255</h2>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./imgs/blackOpium.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Yves Saint Laurent</h1>
+                        <h2 class="secondaryProductTitle">Black Opium</h2>
+                        <h2 class="ProductPrice">$115 - $215</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="productRow">
+                <div class="product">
+                    <img src="./imgs/guccibloom.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Gucci</h1>
+                        <h2 class="secondaryProductTitle">Bloom</h2>
+                        <h2 class="ProductPrice">$120 - $275</h2>
+                    </div>
+                </div>
+                <div class="product">
+                    <img style="height: 25vh" src="./imgs/brightcrystal.webp" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Versace</h1>
+                        <h2 class="secondaryProductTitle">Bright Crytal</h2>
+                        <h2 class="ProductPrice">$104 - $255</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="productRow">
+                <div class="product">
+                    <img src="./imgs/valentino.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Valentino</h1>
+                        <h2 class="secondaryProductTitle">Donna</h2>
+                        <h2 class="ProductPrice">$155 - $265</h2>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./imgs/n5.png" alt="" class="productImg">
+                    <div class="productTitle">
+                        <h1 class="productPrimaryTitle">Chanel</h1>
+                        <h2 class="secondaryProductTitle">N5</h2>
+                        <h2 class="ProductPrice">$150 - $245</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
